@@ -26,14 +26,34 @@
                                     <action selector="recordNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iD6-LT-l33"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhS-JB-Ef0">
+                                <rect key="frame" x="129" y="357.5" width="116.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZe-BH-sWW">
+                                <rect key="frame" x="134" y="387" width="106" height="30"/>
+                                <state key="normal" title="Stop Recording"/>
+                                <connections>
+                                    <action selector="stopACN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iI9-Wu-dBE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tvF-Ic-EYM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="538-4E-nXl"/>
-                            <constraint firstItem="tvF-Ic-EYM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="J1A-0U-Z9U"/>
+                            <constraint firstItem="tvF-Ic-EYM" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10.5" id="3dL-Sr-7cu"/>
+                            <constraint firstItem="tvF-Ic-EYM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cWO-kw-5rl"/>
+                            <constraint firstItem="lhS-JB-Ef0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="24" id="hCv-7X-qWC"/>
+                            <constraint firstItem="lhS-JB-Ef0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qL6-Y9-ZTn"/>
+                            <constraint firstItem="tZe-BH-sWW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="58.5" id="vQ1-xX-aXy"/>
+                            <constraint firstItem="tZe-BH-sWW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yyo-xU-qvl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textOUT" destination="lhS-JB-Ef0" id="lgv-5M-2Vw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
