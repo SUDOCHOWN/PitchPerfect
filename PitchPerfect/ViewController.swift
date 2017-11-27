@@ -28,10 +28,12 @@ class ViewController: UIViewController {
 
     @IBAction func recordNow(_ sender: Any) {
         textOUT.text = "Recording in Progress"
+        stopRecordingOUT.isEnabled = true
     }
     
     @IBAction func stopACN(_ sender: Any) {
         textOUT.text = "Press to record"
+        stopRecordingOUT.isEnabled = false
     }
 }
 
