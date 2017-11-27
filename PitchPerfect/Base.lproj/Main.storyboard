@@ -18,23 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvF-Ic-EYM">
-                                <rect key="frame" x="163" y="318" width="49" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Record"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvF-Ic-EYM">
+                                <rect key="frame" x="129" y="232" width="117" height="117"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="8AM-dt-ycr"/>
+                                    <constraint firstAttribute="width" constant="117" id="qZY-zS-d0z"/>
+                                </constraints>
+                                <state key="normal" image="Record"/>
                                 <connections>
                                     <action selector="recordNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iD6-LT-l33"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhS-JB-Ef0">
-                                <rect key="frame" x="129" y="357.5" width="116.5" height="20.5"/>
+                                <rect key="frame" x="129" y="357" width="116.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZe-BH-sWW">
-                                <rect key="frame" x="134" y="387" width="106" height="30"/>
-                                <state key="normal" title="Stop Recording"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZe-BH-sWW">
+                                <rect key="frame" x="149" y="385" width="76" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="eFM-jv-2t2"/>
+                                    <constraint firstAttribute="height" constant="72" id="pGr-5j-ntf"/>
+                                </constraints>
+                                <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopACN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iI9-Wu-dBE"/>
                                 </connections>
@@ -42,16 +50,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tvF-Ic-EYM" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10.5" id="3dL-Sr-7cu"/>
+                            <constraint firstItem="tvF-Ic-EYM" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-53" id="3dL-Sr-7cu"/>
                             <constraint firstItem="tvF-Ic-EYM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cWO-kw-5rl"/>
                             <constraint firstItem="lhS-JB-Ef0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="24" id="hCv-7X-qWC"/>
                             <constraint firstItem="lhS-JB-Ef0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qL6-Y9-ZTn"/>
-                            <constraint firstItem="tZe-BH-sWW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="58.5" id="vQ1-xX-aXy"/>
+                            <constraint firstItem="tZe-BH-sWW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="77.5" id="vQ1-xX-aXy"/>
                             <constraint firstItem="tZe-BH-sWW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yyo-xU-qvl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="recordOUT" destination="tvF-Ic-EYM" id="Sv0-Ki-Uoj"/>
+                        <outlet property="stopRecordingOUT" destination="tZe-BH-sWW" id="5hK-gR-h0X"/>
                         <outlet property="textOUT" destination="lhS-JB-Ef0" id="lgv-5M-2Vw"/>
                     </connections>
                 </viewController>
@@ -60,4 +70,8 @@
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Record" width="155" height="155"/>
+        <image name="Stop" width="155" height="155"/>
+    </resources>
 </document>
