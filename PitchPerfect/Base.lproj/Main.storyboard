@@ -37,7 +37,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZe-BH-sWW">
+<<<<<<< HEAD
                                 <rect key="frame" x="149" y="407" width="76" height="72"/>
+=======
+                                <rect key="frame" x="149" y="385" width="76" height="72"/>
+>>>>>>> b02d3b4... Added in enabled buttons and updated viewController
                                 <constraints>
                                     <constraint firstAttribute="width" constant="76" id="eFM-jv-2t2"/>
                                     <constraint firstAttribute="height" constant="72" id="pGr-5j-ntf"/>
