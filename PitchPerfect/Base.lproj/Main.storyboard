@@ -165,13 +165,13 @@
                         <viewLayoutGuide key="safeArea" id="dkF-Tz-uJp"/>
                     </view>
                     <connections>
-                        <outlet property="birdOUT" destination="wjp-1G-cej" id="sal-lR-8wb"/>
-                        <outlet property="darthOUT" destination="Y4s-sD-ndW" id="HDU-Pl-ZVn"/>
-                        <outlet property="fastOUT" destination="9al-6F-4o5" id="ihF-uJ-YUi"/>
-                        <outlet property="slowOUT" destination="yCP-wG-rIN" id="12k-7e-UJk"/>
-                        <outlet property="squirelOUT" destination="6Bl-cr-cVa" id="mOu-Ei-z22"/>
-                        <outlet property="stopOUT" destination="7jH-LT-oaH" id="tvG-jc-HtT"/>
-                        <outlet property="wavesOUT" destination="v0T-Md-iGy" id="g1O-sd-Way"/>
+                        <outlet property="chipmunkButton" destination="6Bl-cr-cVa" id="t5n-ZH-K3R"/>
+                        <outlet property="echoButton" destination="wjp-1G-cej" id="pCA-QN-xXQ"/>
+                        <outlet property="rabbitButton" destination="9al-6F-4o5" id="0hl-tz-WxO"/>
+                        <outlet property="reverbButton" destination="v0T-Md-iGy" id="lbO-uH-ghI"/>
+                        <outlet property="snailButton" destination="yCP-wG-rIN" id="l0b-2b-N96"/>
+                        <outlet property="stopButton" destination="7jH-LT-oaH" id="5Xw-e1-3AK"/>
+                        <outlet property="vaderButton" destination="Y4s-sD-ndW" id="67D-xf-GQw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tM1-uy-gGc" userLabel="First Responder" sceneMemberID="firstResponder"/>

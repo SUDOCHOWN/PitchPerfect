@@ -70,7 +70,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         if segue.identifier == "toSecond" {
         let playSoundsVC = segue.destination as! PlaySoundsViewController
         let recordedAudioURL = sender as! URL
-            playSoundsVC.recordAudioURL = recordedAudioURL
+            playSoundsVC.recordedAudioURL = recordedAudioURL
             
         }
     }
