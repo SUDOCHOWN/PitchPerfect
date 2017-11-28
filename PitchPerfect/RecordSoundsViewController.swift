@@ -21,7 +21,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print("Hello this is started")
+
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
