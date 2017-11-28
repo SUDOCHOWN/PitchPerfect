@@ -12,7 +12,7 @@ class PlaySoundsViewController: UIViewController {
     var recordAudioURL: URL!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(String(describing: recordAudioURL))
+        print(String(describing: recordAudioURL!))
         // Do any additional setup after loading the view.
     }
 
