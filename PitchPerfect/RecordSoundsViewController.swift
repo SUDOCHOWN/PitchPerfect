@@ -34,6 +34,8 @@ class RecordSoundsViewController: UIViewController {
     @IBAction func stopACN(_ sender: Any) {
         textOUT.text = "Press to record"
         stopRecordingOUT.isEnabled = false
+
+    
     }
 }
 
