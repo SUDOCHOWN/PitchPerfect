@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZe-BH-sWW">
-                                <rect key="frame" x="149" y="385" width="76" height="72"/>
+                                <rect key="frame" x="149" y="407" width="76" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="76" id="eFM-jv-2t2"/>
                                     <constraint firstAttribute="height" constant="72" id="pGr-5j-ntf"/>
@@ -45,7 +45,6 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopACN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iI9-Wu-dBE"/>
-                                    <segue destination="j7H-HB-cdM" kind="show" id="0qz-Ke-n3s"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,16 +64,17 @@
                         <outlet property="recordOUT" destination="tvF-Ic-EYM" id="Sv0-Ki-Uoj"/>
                         <outlet property="stopRecordingOUT" destination="tZe-BH-sWW" id="5hK-gR-h0X"/>
                         <outlet property="textOUT" destination="lhS-JB-Ef0" id="lgv-5M-2Vw"/>
+                        <segue destination="j7H-HB-cdM" kind="show" identifier="toSecond" id="CzG-4c-0cR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="905" y="117"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="8Qj-SF-X74">
             <objects>
-                <viewController id="j7H-HB-cdM" sceneMemberID="viewController">
+                <viewController id="j7H-HB-cdM" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YGR-Y0-jPI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
