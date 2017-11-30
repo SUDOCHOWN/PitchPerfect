@@ -31,6 +31,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBAction func recordNow(_ sender: Any) {
         textOUT.text = "Recording in Progress"
         stopRecordingOUT.isEnabled = true
+        recordOUT.isEnabled = false
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
